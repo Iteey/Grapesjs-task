@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from "react";
 import grapesjs from "grapesjs";
 import gjsPresetWebpage from "grapesjs-preset-webpage";
+import gjsPresetNewsletter from "grapesjs-preset-newsletter"
 import "./styles/main.scss";
 function App() {
   const [editor, setEditor] = useState(null);
   useEffect(() => {
     const editor = grapesjs.init({
       container: "#editor",
-      plugins:[gjsPresetWebpage],
+      plugins:[gjsPresetWebpage,gjsPresetNewsletter],
       pluginsOpts:{
         gjsPresetWebpage:{},
+        gjsPresetNewsletter:{},
       }
     });
     setEditor(editor);
