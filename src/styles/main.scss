@@ -11,3 +11,26 @@ html{
 ::-webkit-scrollbar{
     display:none;
 }
+.gjs-pn-buttons{
+    background-color:#212121 !important;
+}
+.gjs-one-bg{
+    background-color:#212121 !important;
+}
+.gjs-pn-btn{
+    border:1px solid whitesmoke;
+    border-radius:3px;
+    padding:5px;
+}
+.gjs-pn-btn:hover{
+    color:#7FFFD4;
+}
+.button {
+    background-color:#0a0a23;
+    color: #fff;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+  }

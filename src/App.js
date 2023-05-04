@@ -5,10 +5,11 @@ import gjsPresetNewsletter from "grapesjs-preset-newsletter"
 import "./styles/main.scss";
 function App() {
   const [editor, setEditor] = useState(null);
+  
   useEffect(() => {
     const editor = grapesjs.init({
       container: "#editor",
-      plugins:[gjsPresetWebpage,gjsPresetNewsletter],
+      plugins:[gjsPresetWebpage,gjsPresetNewsletter,],
       pluginsOpts:{
         gjsPresetWebpage:{},
         gjsPresetNewsletter:{},
